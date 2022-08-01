@@ -1,0 +1,56 @@
+.address-book-table {
+     .table {
+          margin-bottom: 0;
+          border-collapse: separate;
+          border-spacing: 0 10px;
+          tr {
+               th {
+                    padding: 20px;
+                    background: #EEEEEE;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #333333;
+               }
+               td {
+                    padding: 20px;
+                    background: #FAFAFA;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #333333;
+                    p {
+                         margin: 0;
+                         span {
+                              color: #FF8615;
+                         }
+                    }
+                    
+               }
+          }
+     }
+}
+@media (max-width: 1199px) {
+     .address-book-table .table tr td {
+          padding: 10px;
+          font-size: 13px;
+     }
+     .address-book-table .table tr th {
+          padding: 10px;
+          font-size: 14px;
+     }
+}
+@media (max-width: 767px) {
+     .address-book-table .table tr td {
+          padding: 10px;
+          font-size: 13px;
+     }
+     .address-book-table .table tr th {
+          padding: 10px;
+          font-size: 14px;
+     }
+     .address-book-table .table  {
+          width: 100%;
+          min-width: 600px;
+     }
+}

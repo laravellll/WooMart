@@ -1,0 +1,20 @@
+.account-page-header {
+     margin-bottom: 20px;
+     .title {
+          font-family: $titlefont;
+          font-size: 20px;
+          color: #333333;
+          text-transform: capitalize;
+     }
+     .edit-btn {
+          display: inline-block;
+          font-family: $titlefont;
+          font-size: 16px;
+          text-transform: capitalize;
+          color: #51B5B8;
+          transition: $transition;
+          &:hover {
+               color: #FF8615;
+          }
+     }
+}

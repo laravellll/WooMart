@@ -1,0 +1,95 @@
+.account-page-menu {
+     ul {
+          margin: 0;
+          padding: 0;
+          li {
+               list-style: none;
+               margin-bottom: 10px;
+               i {
+                    color: #333333;
+                    transition: $transition;
+               }
+               a {
+                    display: flex;
+                    height: 50px;
+                    align-items: center;
+                    padding: 10px;
+                    background: #EEEEEE;
+                    font-size: 15px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    color: #333333;
+                    transition: $transition;
+               }
+               &:hover {
+                    i {
+                         color: var(--white);
+                    }
+                    a {
+                         background: #51B5B8;
+                         color: var(--white);
+                    }
+               }
+               .toggle-account-menu {
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                    color: var(--white);
+                    cursor: pointer;
+               }
+               &.current-menu-item {
+                    i {
+                         color: var(--white);
+                    }
+                    a {
+                         background: #51B5B8;
+                         color: var(--white);
+                    }
+               }
+               &.menu-has-children {
+                    position: relative;
+                    .account-sub-menu {
+                         margin-top: 20px;
+                         margin-bottom: 20px;
+                         padding: 0;
+                         display: none;
+                         li {
+                              list-style: none;
+                              a {
+                                   display: block;
+                                   height: auto;
+                                   padding: 0 10px;
+                                   background: transparent;
+                                   font-size: 15px;
+                                   text-transform: capitalize;
+                                   color: #666666;
+                                   transition: $transition;
+                                   &:hover {
+                                        color: #51B5B8;
+                                   }
+                              }
+                              &.current-menu-item {
+                                   a {
+                                        color: #51B5B8;
+                                   }
+                              }
+                         }
+                    }
+                    &.has-open {
+                         .account-sub-menu {
+                              display: block;
+                         }
+                    }
+               }
+               
+          }
+     }
+}
+.account-page-sidemenu {
+     margin-bottom: 50px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+     .account-page-menu ul li a {
+          font-size: 13px;
+     }
+}

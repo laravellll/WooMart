@@ -1,0 +1,170 @@
+/*----------------------------
+36.offer-area
+-----------------------------*/
+.offer-area {
+  .offer-big-banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .offer-small-banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/*----------------------------
+special-offers-aera
+-----------------------------*/
+.special-offers-aera {
+  .special-offers-slide {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    position: relative;
+  }
+  .slick-slide {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+  }
+  .slick-next {
+    top: -4rem;
+    right: 1rem;
+  }
+  .slick-prev {
+    top: -4rem;
+    right: 5rem;
+  }
+}
+/*----------------------------
+offsell-area
+-----------------------------*/
+.offsell-area {
+  .single-product-offer {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/*----------------------------
+offer-banner-area
+-----------------------------*/
+.offer-banner-area {
+  .single-offer-banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/*----------------------------
+special-offers-v2
+-----------------------------*/
+.special-offers-v2 {
+  .arrow-two:hover {
+    background: var(--primary-color-three);
+    color: var(--white);
+  }
+  .card {
+    border: 1px solid var(--color-four);
+  }
+}
+/*----------------------------
+special-offers-v3
+-----------------------------*/
+.special-offers-v3 {
+  .arrow-two:hover {
+    background: var(--primary-color-two);
+    color: var(--white);
+  }
+}
+/*----------------------------
+offer-banner-area-two
+-----------------------------*/
+.offer-banner-area-two {
+  .single-offer-banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/*----------------------------
+offer-banner-area-two
+-----------------------------*/
+.offer-banner-area-three {
+  .single-offer-banner {
+    position: relative;
+    padding: 1.5rem 2rem;
+    height: 41.5rem;
+    z-index: 1;
+    background: transparent;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      background: #cdfeff;
+    }
+    .offer-thumbnail {
+      width: 50%;
+    }
+    .product-content {
+      width: 50%;
+      padding-left: 1rem;
+      .offer-title {
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--primary-color-two);
+      }
+      .product-title {
+        margin-bottom: .5rem;
+        font-family: $titlefont;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--black);
+        a {
+          color: var(--black);
+          transition: $transition;
+          &:hover {
+            color: var(--hover-color);
+          }
+        }
+      }
+      p {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: var(--color-two);
+      }
+      .shop-now-btn {
+        color: var(--secondary-color);
+        &:hover {
+          color: var(--secondary-color);
+        }
+      }
+    }
+  }
+  .offer-banner-two {
+    background: transparent;
+    &::before {
+      background: var(--color-four);
+    }
+  }
+}
+
+
+.offer-product-v5 {
+  .arrow-two:hover {
+    background: var(--primary-color-two);
+    color: var(--white);
+  }
+}

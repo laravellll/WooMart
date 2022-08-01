@@ -1,0 +1,74 @@
+/*----------------------------
+40.offer-week-area
+-----------------------------*/
+.offer-week-area {
+  .offer-week-wrap {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+/*----------------------------
+offer-week-area-two
+-----------------------------*/
+.offer-week-area-two {
+  .sigle-product-offer {
+    .product-info {
+      .offer-title {
+        margin-bottom: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--secondary-color);
+      }
+      .product-tatle {
+        margin-bottom: 1rem;
+        font-family: $titlefont;
+        font-size: 4.8rem;
+        font-weight: 600;
+        text-transform: capitalize;
+        color: var(--black);
+      }
+      .time-reming {
+        margin-bottom: 2rem;
+        .time-reming-title {
+          margin-bottom: 1.5rem;
+          font-size: 1.8rem;
+          font-weight: 500;
+          text-transform: capitalize;
+          color: var(--menu-color);
+        }
+      }
+    }
+  }
+}
+#offer-product-time {
+  list-style: none;
+  padding: 0;
+  display: block;
+  li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 1.5rem;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-size: 2.4rem;
+      font-weight: 700;
+      width: 5rem;
+      height: 5rem;
+      background: var(--color-nine);
+      color: var(--white);
+    }
+    p {
+      color: var(--menu-color);
+      margin: 0;
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      font-weight: 400;
+    }
+  }
+}

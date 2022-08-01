@@ -1,0 +1,42 @@
+.manage-my-account {
+     .single-account-info {
+          margin-bottom: 30px;
+          h4 {
+               margin-bottom: 25px;
+               font-family: $titlefont;
+               font-size: 18px;
+               text-transform: capitalize;
+               color: #333333;
+          }
+          p {
+               margin-bottom: 20px;
+               font-size: 15px;
+               font-weight: 400;
+               color: #333333;
+               &:last-child {
+                    margin-bottom: 0;
+               }
+               span {
+                    text-transform: capitalize;
+               }
+          }
+          ul {
+               li {
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 20px;
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #333333;
+                    &:last-child {
+                         margin-bottom: 0;
+                    }
+                    i {
+                         position: absolute;
+                         left: 0;
+                         top: 5px;
+                    }
+               }
+          }
+     }
+}
