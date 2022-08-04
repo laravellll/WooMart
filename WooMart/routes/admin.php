@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\Dashboard\AuthController;
+use App\Http\Controllers\Dashboard\DashboardController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +16,14 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::group(['prefix' => 'admin'], function() {
+
     Route::get('/login', [AuthController::class, 'login'])->name('admin.login');
+    Route::post('/login-check', [AuthController::class, 'adminCheck'])->name('admin.login.check');
+
+    Route::group(['middleware' => 'admin.auth'], function () {
+
+        Route::get('',[DashboardController::class,'index'])->name('admin.dashboard');
+
+    });
 
 });
